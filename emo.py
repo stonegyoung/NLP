@@ -16,3 +16,9 @@ if st.button('분석하기'):
         st.write('이 텍스트의 감정은 긍정적입니다.')
     else:
         st.write('이 텍스트의 감정은 중립적입니다.')
+
+import pandas as pd
+df = pd.read_csv("https://raw.githubusercontent.com/byungjooyoo/Dataset/main/hotel_review.csv")
+print(df.shape)
+print(df.info())
+st.write(df)
